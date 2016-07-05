@@ -1,8 +1,16 @@
 <html>
+  <head>
+    <script language="javascript">
+      var language = navigator.languages && navigator.languages[0] || // Chrome / Firefox
+      navigator.language ||   // All browsers
+      navigator.userLanguage; // IE <= 10
+      console.log(language);
+    </script>
+</head>
   <title>our title</title>
   <body>
     <pre>
       hello
     </pre>
-    </body>
+  </body>
 </html>
